@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 3rem;
+  padding: 0.5rem 1rem;
+}
+.header-left-menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header-search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border-right-color: white;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+.header-search-bar1 {
+  display: block;
+  outline: none;
+  color: black;
+  border: none;
+  background-color: rgb(231, 225, 225);
+}
+
+.header-search-icon1 {
+  background-color: rgb(231, 225, 225);
+  border-right-color: white;
+  padding-top: 5px;
+}
+.header-search-icon1.q1 {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header-search-icon1.q2 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.left-side {
+  grid-area: left-side;
+}
+.left-first-one {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 10px;
+  color: red;
+  padding: 3px;
+  outline: none;
+  border: none;
+  background-color: rgb(241, 224, 224);
+  margin-top: 0%;
+}
+.left-first-one.c1 {
+  background-color: rgb(255, 254, 254);
+  color: black;
+}
+
+.compose {
+  display: grid;
+  border: 1px solid rgb(196, 189, 189);
+  border-radius: 20px;
+  box-shadow: 1px 1px rgb(170, 168, 168);
+  grid-template-columns: auto 1fr auto;
+  padding: 10px;
+  margin: 10px 15px 10px 7px;
+}
+.compose button {
+  display: block;
+  outline: none;
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+.main {
+  background-color: #d6a5d6;
+  grid-area: main;
+  grid-template-columns: repeat(autofit ifr);
+  border: 1px solid rgb(1, 1, 1);
+  display: grid;
+  place-items: center;
+}
+.main p {
+  border: 1px solid rgb(1, 1, 1);
+}
+.right-side {
+  background-color: brown;
+  grid-area: right-side;
+}
+.shortcuts {
+  background-color: rgb(157, 255, 0);
+  grid-area: shortcuts;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header header" auto
+    "left-side main right-side shortcuts" 1fr/
+    0.25fr 1fr 0.3fr auto;
+}
