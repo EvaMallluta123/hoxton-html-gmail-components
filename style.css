@@ -20,7 +20,7 @@
 
 .header-search-bar {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   border-right-color: white;
   outline: none;
   border: none;
@@ -32,6 +32,7 @@
   color: black;
   border: none;
   background-color: rgb(231, 225, 225);
+  grid-template-columns: auto auto auto;
 }
 
 .header-search-icon1 {
@@ -50,6 +51,12 @@
 
 .left-side {
   grid-area: left-side;
+}
+.s1{
+  font-size: 13px;
+  color: grey;
+  
+
 }
 .left-first-one {
   display: grid;
@@ -86,25 +93,152 @@
   border: none;
   background-color: white;
 }
+.left-secont{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px 5px 5px 5px ;
+  padding: 1px;
+  margin-top: 5px;
 
+}
+.left-secont hr{
+  padding: bottom 5px; 
+}
+.left-third{
+  display: grid;
+  grid-template-columns: 30px 70px auto auto;
+  margin-top: 10px;
+ 
+
+
+}
+.left-third img{
+  border-radius: 40%;
+}
+.left-third.c1 img{
+  border-radius: 40%;
+}
+.left-third.c1{
+  grid-template-columns: 30px 70px ;
+  
+ 
+
+}
+footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px 50px 0px 50px;
+  border-top: 1px solid rgb(229, 218, 218);
+  justify-items: center;
+}
 .main {
-  background-color: #d6a5d6;
+  background-color: white;
   grid-area: main;
   grid-template-columns: repeat(autofit ifr);
   border: 1px solid rgb(1, 1, 1);
   display: grid;
-  place-items: center;
+  
 }
 .main p {
   border: 1px solid rgb(1, 1, 1);
 }
+.icon-menu{
+  display: grid;
+  grid-template-columns:  25px 50px 50px 490px 80px 40px 70px;  
+
+}
+.first-main{
+  display: grid;
+  grid-template-columns: 30px 70px auto auto;
+  border: 1px solid rgb(240, 238, 238);
+  font-weight: bold;
+}
+.first-main.c1{
+  background-color: rgb(249, 248, 248);
+}
+.c2{
+margin-top: 5px;
+}
 .right-side {
-  background-color: brown;
   grid-area: right-side;
 }
+.right-one{
+  display: grid;
+  grid-template-columns: auto 50px ;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.right-side button{
+  background-color: white;
+  border-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  font-size: 16px;
+  margin:0px 0px 10px 20px;
+  padding: 10px 50px 10px 50px;
+  color: rgb(66, 139, 184);
+  box-shadow: none;
+  align-items: center;
+ 
+}
+.right-two ul{
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  padding: 20px;
+  padding-bottom: 0px;
+  list-style: circle;
+  border-bottom: 1px solid gray;
+
+ 
+  
+}
+.right-two img{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  padding-bottom: 10px;
+position: relative;
+bottom: 178px;
+left: 150px;
+
+
+  
+}
+.right-two p{
+  color: gray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left: 10px;
+}
+.image{
+display: grid;
+grid-template-columns: auto auto auto auto ;
+grid-template-rows: max-content;
+position: relative;
+bottom: 120px;
+
+
+}
+.right-three{
+  position: relative;
+  bottom: 135px;
+ 
+}
+.right-three.c1{
+  padding-left: 120px;
+  color: rgb(52, 109, 150);
+}
+
 .shortcuts {
-  background-color: rgb(157, 255, 0);
+ 
   grid-area: shortcuts;
+
+}
+.shortcuts-one{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+ margin-left: 30px;
+}
+.shortcuts-one img{
+  margin-bottom: 40px;
+
 }
 body {
   height: 100vh;
@@ -112,5 +246,5 @@ body {
   grid-template:
     "header header header header" auto
     "left-side main right-side shortcuts" 1fr/
-    0.25fr 1fr 0.3fr auto;
+    0.25fr 1.5fr 0.5fr 0.1fr;
 }
